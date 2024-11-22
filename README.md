@@ -1,13 +1,25 @@
-# Name: Edgar Flores
+# Name: Relational Database Project
 
-# Description
-Built a relational database that can be used with SQL‑like commands entirely from scratch using C++ (about 4,500 lines of code).
+## Overview
+This project implements a relational database from scratch using C++. It supports SQL-like commands for table creation, data insertion, and querying. The project consists of approximately 4,500 lines of code and can process SQL statements from both the command line and .txt files.
 
-# How does it work
-Can be used with the command line. You can use a command like "make table employee fields last, first, dep, salary, year" followed by "insert into employee values Blow, Joe, CS, 100000, 2018" and so on. 
-Alternatively, can use a batch file and read commands from a file in csv format. Example:
+## Features
 
-## File Example
+- **Table Operations**: Create tables with specified fields.
+- **Insert Data**: Insert records into tables.
+- **SQL-Like Queries**: Supports `SELECT *`, relational operators (`=`, `>=`, etc.), and logical operators (`AND`, `OR`).
+- **Batch Processing**: Execute SQL commands from a txt file.
+
+## Example Usage
+### Command-Line Input
+```sql
+make table employee fields last, first, dep, salary, year
+insert into employee values Blow, Joe, CS, 100000, 2018
+insert into employee values Blow, JoAnn, Physics, 200000, 2016
+select * from employee
+```
+### Batch File Example
+```sql
 make table employee fields  last, 		first, 			dep,  		salary, 	year\
 insert into employee values Blow, 		Joe, 			CS,		 	100000, 	2018\
 insert into employee values Blow, 		JoAnn,			Physics, 	200000, 	2016\
@@ -26,7 +38,8 @@ insert into employee values "Van Gogh",	Vincent, 		Art,		240000, 	2015\
 insert into employee values "Van Gogh",	Vincent, 		CS,			245000, 	2015\
 insert into employee values "Van Gogh",	"Jim Bob", 		"Phys Ed",	230000, 	2010\
 select * from employee 
-
+```
+```sql
 make table student fields fname, lname, major, age, company\
 insert into student values Flo, 			Yao, 		CS, 				20, 	Google\
 insert into student values Bo, 				Yang, 		CS, 				28,		Microsoft\
@@ -39,8 +52,10 @@ insert into student values "Anna Grace", 	"Del Rio", 	CS,	 				22,		USAF\
 insert into student values "Teresa Mae", 	Gowers, 	Chemistry,			22,		Verizon\
 insert into student values Alex,			Smith,		"Gender Studies", 	53,		Amazon\
 select * from student
+```
 
-### Program Returns (for select *)
+#### Program Returns (for select *)
+```sql
 [177] select * from employee 
 
 Table name: employee_temp_177, records: 16
@@ -84,17 +99,33 @@ record          fname          lname          major            age        compan
 
 
 SQL: DONE.
+```
+## What else can it do?
+### Relational Operators
+- **Operators**: `=`, `>`, `<`, `>=`, `<=`>.
+- **Example**: 
+  ```sql
+  select * from employee where salary >= 235000
+  ```
 
-# What else can it do?
-Aside from simple select, it can also do relational operators and logical operators
+### Logical Operators
 
-## File Example: Relational Operators
+- **Operators**: `AND`, `OR`
+- **Example**:
+```sql
+select * from student where lname = 'Yang' or major = 'CS' and age < 23
+```
+
+### File Example: Relational Operators
+```sql
 select * from student where lname >= Yang\
 select * from student where age >= 40\
 select * from employee where last >= Jack\
 select * from employee where salary >= 235000\
+```
 
 ### Program Returns
+```sql
 [221] select * from student where lname >= Yang
 
 Table name: student_temp_23, records: 2
@@ -150,13 +181,17 @@ record           last          first            dep         salary           yea
 
 
 SQL: DONE.
+```
 
 ## File Example: Logical Operators
+```sql
 select * from student where lname = Yang or major = CS and age < 23 or company = Google \
 select * from student where major = Physics or major = Math and company = Google or lname = Jackson\
 select * from employee where dep = CS or year >2014 and year < 2018 or salary >= 265000\
+```
 
 ### Program Returns
+```sql
 [268] select * from student where lname = Yang or major = CS and age < 23 or company = Google 
 
 Table name: student_temp_22, records: 4
@@ -199,3 +234,6 @@ record           last          first            dep         salary           yea
 
 
 SQL: DONE.
+```
+## Conclusion
+This project serves as a fully-functional relational database system with basic SQL operations, offering a foundation for further development into a more advanced system.
