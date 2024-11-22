@@ -1,0 +1,10 @@
+debug/main.o
+debug/parser.o
+debug/random.o
+debug/record.o
+debug/sql.o
+debug/state_machine.o
+debug/stokenizer.o
+debug/table.o
+debug/token.o
+debug/ftokenizer.o

@@ -1,0 +1,10 @@
+release/main.o
+release/parser.o
+release/random.o
+release/record.o
+release/sql.o
+release/state_machine.o
+release/stokenizer.o
+release/table.o
+release/token.o
+release/ftokenizer.o

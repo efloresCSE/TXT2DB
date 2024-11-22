@@ -1,0 +1,168 @@
+//Making pokemon table
+make table pokemon fields name, type
+
+//Inserting 151 pokemon into table
+insert into pokemon values Bulbasaur, grass
+insert into pokemon values Ivysaur, grass
+insert into pokemon values Venasaur, grass
+insert into pokemon values Charmander, fire
+insert into pokemon values Charmeleon, fire
+insert into pokemon values Charizard, fire
+insert into pokemon values Squirtle, water
+insert into pokemon values Wartotle, water
+insert into pokemon values Blastoise, water
+insert into pokemon values Caterpie, bug
+insert into pokemon values Metapod, bug
+insert into pokemon values Butterfree, bug
+insert into pokemon values Weedle, bug
+insert into pokemon values Kakuna, bug
+insert into pokemon values Beedrill, bug
+insert into pokemon values Pidgey, flying
+insert into pokemon values Pidgeotto, flying
+insert into pokemon values Pidgeot, flying
+insert into pokemon values Rattata, normal
+insert into pokemon values Raticate, normal
+insert into pokemon values Spearow, flying
+insert into pokemon values Fearow, flying
+insert into pokemon values Ekans, poison
+insert into pokemon values Arbok, poison
+insert into pokemon values Pikachu, electric
+insert into pokemon values Raichu, electric
+insert into pokemon values Sandshrew, ground
+insert into pokemon values Sandslash, ground
+insert into pokemon values Nidoran, poison
+insert into pokemon values Nidorina, poison
+insert into pokemon values Nidoqueen, poison
+insert into pokemon values Nidoran, poison
+insert into pokemon values Nidorino, poison
+insert into pokemon values Nidoking, poison
+insert into pokemon values Clefairy, fairy
+insert into pokemon values Clefable, fairy
+insert into pokemon values Vulpix, fire
+insert into pokemon values Ninetales, fire
+insert into pokemon values Jigglypuff, fairy
+insert into pokemon values Wigglytuff, fairy
+insert into pokemon values Zubat, flying
+insert into pokemon values Golbat, flying
+insert into pokemon values Oddish, grass
+insert into pokemon values Gloom, grass
+insert into pokemon values Vileplume, Grass
+insert into pokemon values Paras, bug
+insert into pokemon values Parasect, bug
+insert into pokemon values Venonat, bug
+insert into pokemon values Venomoth, bug
+insert into pokemon values Diglett, ground
+insert into pokemon values Dugtrio, ground
+insert into pokemon values Meowth, normal
+insert into pokemon values Persian, normal
+insert into pokemon values Psyduck, water
+insert into pokemon values Golduck, water
+insert into pokemon values Mankey, fighting
+insert into pokemon values Primeape, fighting
+insert into pokemon values Growlith, fire
+insert into pokemon values Arcanine, fire
+insert into pokemon values Polywag, water
+insert into pokemon values Polywhirl, water
+insert into pokemon values Polywrath, water
+insert into pokemon values Abra, psychic
+insert into pokemon values Kadabra, psychic
+insert into pokemon values Alakazam, psychic
+insert into pokemon values Machop, fighting
+insert into pokemon values Machoke, fighting
+insert into pokemon values Machamp, fighting
+insert into pokemon values Bellsprout, grass
+insert into pokemon values Weepinbell, grass
+insert into pokemon values Victreebel, grass
+insert into pokemon values Tentacool, water
+insert into pokemon values Tantacruel, water
+insert into pokemon values Geodude, rock
+insert into pokemon values Graveler, rock
+insert into pokemon values Golem, rock
+insert into pokemon values Ponyta, fire
+insert into pokemon values Rapidash, fire
+insert into pokemon values Slowpoke, water
+insert into pokemon values Slowbro, water
+insert into pokemon values Magnemite, electric
+insert into pokemon values Magneton, electric
+insert into pokemon values "Farfetch'd", flying
+insert into pokemon values Doduo, flying
+insert into pokemon values Dodrio, flying
+insert into pokemon values Seel, water
+insert into pokemon values Dewgong, water
+insert into pokemon values Grimer, poison
+insert into pokemon values Muk, poison
+insert into pokemon values Shelder, water
+insert into pokemon values Cloyster, water
+insert into pokemon values Gastly, ghost
+insert into pokemon values Haunter, ghost
+insert into pokemon values Gengar, ghost
+insert into pokemon values Onix, rock
+insert into pokemon values Drowzee, psychic
+insert into pokemon values Hypno, psychic
+insert into pokemon values Krabby, water
+insert into pokemon values Kingler, water
+insert into pokemon values Voltorb, electric
+insert into pokemon values Electrode, electric
+insert into pokemon values Exeggcute, grass
+insert into pokemon values Exeggutor, grass
+insert into pokemon values Cubone, ground
+insert into pokemon values Marowak, ground
+insert into pokemon values Hitmonlee, fighting
+insert into pokemon values Hitmonchan, fighting
+insert into pokemon values Lickitung, normal
+insert into pokemon values Koffing, poison
+insert into pokemon values Weezing, poison
+insert into pokemon values Rhyhorn, ground
+insert into pokemon values Rhydon, ground
+insert into pokemon values Chansey, normal
+insert into pokemon values Tangela, grass
+insert into pokemon values Kangaskhan, normal
+insert into pokemon values Horsea, water
+insert into pokemon values Seadra, water
+insert into pokemon values Goldeen, water
+insert into pokemon values Seaking, water
+insert into pokemon values Staryu, water
+insert into pokemon values Starmie, water
+insert into pokemon values "Mr. Mime", psychic
+insert into pokemon values Scyther, bug
+insert into pokemon values Jynx, psychic
+insert into pokemon values Electabuzz, electric
+insert into pokemon values Magmar, fire
+insert into pokemon values Pinsir, bug
+insert into pokemon values Tauros, normal
+insert into pokemon values Magikarp, water
+insert into pokemon values Gyarados, water
+insert into pokemon values Lapras, water
+insert into pokemon values Ditto, normal
+insert into pokemon values Eevee, normal
+insert into pokemon values Vaporeon, water
+insert into pokemon values Jolteon, electric
+insert into pokemon values Flareon, fire
+insert into pokemon values Porygon, normal
+insert into pokemon values Omanyte, water
+insert into pokemon values Omastar, water
+insert into pokemon values Kabuto, water
+insert into pokemon values Kabutops, water
+insert into pokemon values Aerodactyl, flying
+insert into pokemon values Snorlax, normal
+insert into pokemon values Articuno, ice
+insert into pokemon values Zapdos, electric
+insert into pokemon values Moltres, fire
+insert into pokemon values Dratini, dragon
+insert into pokemon values Dragonair, dragon
+insert into pokemon values Dragonite, dragon
+insert into pokemon values Mewtwo, psychic
+insert into pokemon values Mew, psychic
+
+
+//Testing Select
+select * from pokemon where type = psychic or type = ghost
+select * from pokemon where name < Gengar
+select * from pokemon where name > Dratini and name < Gastly
+select * from pokemon where type = fire and name < P or type = electric and name < P
+select * from pokemon where name <= Charmander or name >= Pidgey
+select * from pokemon where name <= Aaron
+select * from pokemon where name >= Zigzagoon
+select * from pokemon where name <= Barkeshli or name >= Sassan
+
+
