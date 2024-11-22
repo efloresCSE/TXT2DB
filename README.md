@@ -237,3 +237,7 @@ SQL: DONE.
 ```
 ## Conclusion
 This project serves as a fully-functional relational database system with basic SQL operations, offering a foundation for further development into a more advanced system.
+
+## To-do
+- Clean up repository, removing unnecessary files
+- Build GUI using qt gui library/qt designer
