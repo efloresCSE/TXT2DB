@@ -1,4 +1,4 @@
-# Name: Relational Database Project
+# Name: TXT2DB
 
 ## Overview
 This project implements a relational database from scratch using C++. It supports SQL-like commands for table creation, data insertion, and querying. The project consists of approximately 4,500 lines of code and can process SQL statements from both the command line and .txt files.
